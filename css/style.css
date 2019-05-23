@@ -37,6 +37,10 @@
     white-space: nowrap;
 }
 
+.visible {
+    visibility: visible; 
+}
+
 .btn {
     background-color: var(--color); 
     color: #fff; 
@@ -74,6 +78,7 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+/* Header */
 .page-header {
     height: 40px; 
     background-color: #000; 
@@ -183,6 +188,11 @@ body {
     display: block;  
 }
 
+.page-nav-sublist-link:hover {
+    color: var(--color);
+}
+
+/* Slider section */
 .main-slider-bg {
     background: linear-gradient(#fff, #ddd);
 }
@@ -219,7 +229,7 @@ body {
 
 .slider-slide {
     position: absolute;
-    top: 0;
+    top: 20%; ;
     left: 0; 
     width: 100%; 
     height: 100%;
@@ -227,9 +237,43 @@ body {
     transition: 1s opacity; 
 }
 
+
 .slider-slide-active {
     opacity: 1; 
     z-index: 1; 
+}
+
+.slider-txt {
+    display: flex; 
+    flex-direction: column; 
+    width: 40%; 
+    align-self: center; 
+    margin-right: 60px; 
+}
+
+.slider-title {
+    text-transform: uppercase; 
+    font-size: 36px; 
+    font-weight: 600; 
+    text-align: center; 
+}
+
+.slider-txt-span {
+    color: var(--color);
+}
+
+.silder-txt-content {
+    text-align: center; 
+    font-size: 14px;
+    line-height: 1.5em; 
+    margin-top: 0; 
+}
+
+.slider-btn {
+    width: 60%; 
+    align-self: center; 
+    padding: 15px 0; 
+    margin-top: 20px; 
 }
 
 /* Photos - offer */
